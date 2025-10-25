@@ -3,59 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thando Mashele - Professional Portfolio</title>
+    <title>Thando Mashele - BCom Information Systems Student</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Thando Mashele</h1>
-            <p class="tagline">Creative Professional & Digital Specialist</p>
-        </header>
-
-        <section class="section">
-            <h2>About Me</h2>
-            <p>I am a passionate creative professional with expertise in digital solutions, design, and technology. I specialize in creating meaningful digital experiences that bridge innovation with practical functionality.</p>
-        </section>
-
-        <section class="section">
-            <h2>Skills & Expertise</h2>
-            <p>Web Development • Digital Design • Project Management • Creative Strategy • User Experience • Brand Development</p>
-            <div class="button-group">
-                <a href="#web-projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Download CV</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Thando Mashele</span>
             </div>
-        </section>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-        <section class="section">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Web Design Project</h3>
-                    <p>Modern responsive website with focus on user experience and clean aesthetics.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Digital Campaign</h3>
-                    <p>Comprehensive digital strategy and execution for brand awareness.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Creative Solution</h3>
-                    <p>Innovative approach to complex business challenges through technology.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                    </div>
+                    <h1 class="hero-title">Thando Mashele</h1>
+                    <p class="hero-subtitle">BCom Applied Information Systems Student</p>
+                    <p class="hero-description">Cloud Computing & Cybersecurity Enthusiast</p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Languages</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">BCom</span>
+                            <span class="stat-label">Degree</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">IT</span>
+                            <span class="stat-label">Focus</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <section class="section" id="contact">
-            <h2>Get In Touch</h2>
-            <p>Interested in collaborating or learning more about my work? I'd love to connect and discuss how we can work together.</p>
-            <div class="button-group">
-                <a href="mailto:thando.mashele@example.com" class="btn">Email Me</a>
-                <a href="https://linkedin.com/in/thandomashele" class="btn btn-secondary">LinkedIn</a>
-                <a href="tel:+1234567890" class="btn btn-secondary">Call Me</a>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I am a motivated and detail-oriented Information Systems student at the University of Johannesburg with a passion for technology and customer service. My academic focus on cloud computing and cybersecurity is complemented by strong technical proficiency and problem-solving skills.
+                    </p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>cmashele85@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>066 212 5099</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Boksburg, South Africa</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-language"></i>
+                            <div>
+                                <strong>Languages</strong>
+                                <p>English, Afrikaans, isiZulu, siSwati, Venda, XiTsonga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </div>
-    
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>University of Johannesburg</h3>
+                        <span class="timeline-date">2024 – Present</span>
+                        <p class="timeline-degree">BCom Applied Information Systems</p>
+                        <ul class="timeline-modules">
+                            <li>Development Software</li>
+                            <li>Information Systems</li>
+                            <li>Entrepreneurship</li>
+                            <li>Cloud Computing</li>
+                            <li>Cybersecurity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Hoërskool Bergvlam</h3>
+                        <span class="timeline-date">2018 – 2022</span>
+                        <p class="timeline-subjects">Majors: Physics, Life Science, Accounting, Mathematics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Apple Ecosystem (MacOS, iOS)</li>
+                        <li>Technical Troubleshooting</li>
+                        <li>Customer Technical Support</li>
+                        <li>Microsoft 365 Suite</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Customer Service Excellence</li>
+                        <li>Problem-Solving & Analytics</li>
+                        <li>Technical Communication</li>
+                        <li>Adaptability & Quick Learning</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Career Focus</h3>
+                    <ul>
+                        <li>Apple Product Support</li>
+                        <li>Technical Troubleshooting</li>
+                        <li>Cloud Computing</li>
+                        <li>Cybersecurity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm currently seeking opportunities to apply my technical knowledge and customer service skills. I'm particularly interested in roles involving Apple product support and technical troubleshooting.</p>
+                    
+                    <div class="availability">
+                        <h4>Availability</h4>
+                        <p>Willing to commute and adapt to flexible part-time hours to accommodate my studies. Ready to contribute effectively to technology-focused teams.</p>
+                    </div>
+                </div>
+                
+                <div class="contact-actions">
+                    <a href="mailto:cmashele85@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Email Me
+                    </a>
+                    <a href="tel:+27662125099" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Call Me
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Thando Mashele. All rights reserved.</p>
+            <p>BCom Applied Information Systems Student | Cloud & Cybersecurity Enthusiast</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
