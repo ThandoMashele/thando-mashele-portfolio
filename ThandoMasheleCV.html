@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thandolwami Christian Mashele - Curriculum Vitae</title>
+    <style>
+        /* CV Styles - Matches Portfolio Theme */
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1e40af;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --border: #e5e7eb;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--background);
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 25px;
+        }
+        
+        .cv-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        
+        .cv-header h1 {
+            font-size: 2.3rem;
+            color: var(--text-dark);
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+        
+        .cv-header .full-name {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .cv-header .title {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        
+        .section {
+            margin-bottom: 1.8rem;
+        }
+        
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+            font-weight: 600;
+        }
+        
+        .education-item, .experience-item {
+            margin-bottom: 1.2rem;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        
+        .item-date {
+            color: var(--text-light);
+            font-style: italic;
+        }
+        
+        .item-subtitle {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .item-description {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 0.8rem;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        
+        .skill-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-category li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 1.2rem;
+        }
+        
+        .skill-category li:before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+        
+        .language-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .personal-statement {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .personal-statement p {
+            color: var(--text-dark);
+            font-style: italic;
+            margin: 0;
+            line-height: 1.7;
+        }
+        
+        @media print {
+            body {
+                padding: 15px;
+                font-size: 14px;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+            
+            .cv-header h1 {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.8rem;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <header class="cv-header">
+            <h1>Thandolwami Christian Mashele</h1>
+            <div class="title">BCom Applied Information Systems Student</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>cmashele85@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>068 371 4162 / 066 212 5099</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Boksburg, South Africa</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span>linkedin.com/in/thandolwami-mashele</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Personal Statement -->
+        <section class="section">
+            <div class="personal-statement">
+                <p>Ambitious Information Systems student with a passion for cloud computing and cybersecurity. Seeking internship opportunities to apply technical skills while working toward the long-term goal of establishing a Cloud AI Security Consultancy. Committed to continuous learning and professional growth in technology security frameworks.</p>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">University of Johannesburg</div>
+                    <div class="item-date">2024 – Present</div>
+                </div>
+                <div class="item-subtitle">BCom Applied Information Systems</div>
+                <div class="item-description">
+                    <strong>Key Modules:</strong> Development Software, Information Systems, Entrepreneurship, Business Management, Cloud Computing, Cybersecurity
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Hoërskool Bergvlam</div>
+                    <div class="item-date">2018 – 2022</div>
+                </div>
+                <div class="item-subtitle">National Senior Certificate</div>
+                <div class="item-description">
+                    <strong>Majors:</strong> Physics, Life Science, Accounting, Mathematics
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>HTML5 & CSS3</li>
+                        <li>C#</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cloud & DevOps</h4>
+                    <ul>
+                        <li>AWS (S3, CloudFront, Route 53)</li>
+                        <li>Git & GitHub</li>
+                        <li>Static Website Deployment</li>
+                        <li>CI/CD Concepts</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Software & Tools</h4>
+                    <ul>
+                        <li>Microsoft 365 Suite</li>
+                        <li>Visual Studio Code</li>
+                        <li>Apple Ecosystem (macOS, iOS)</li>
+                        <li>Technical Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Skills -->
+        <section class="section">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical Abilities</h4>
+                    <ul>
+                        <li>Problem-Solving & Analytics</li>
+                        <li>Technical Communication</li>
+                        <li>Customer Technical Support</li>
+                        <li>Adaptability & Quick Learning</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Business Skills</h4>
+                    <ul>
+                        <li>Customer Service Excellence</li>
+                        <li>Project Management Fundamentals</li>
+                        <li>Entrepreneurial Mindset</li>
+                        <li>Professional Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="languages">
+                <span class="language-tag">English</span>
+                <span class="language-tag">Afrikaans</span>
+                <span class="language-tag">isiZulu</span>
+                <span class="language-tag">siSwati</span>
+                <span class="language-tag">Venda</span>
+                <span class="language-tag">XiTsonga</span>
+            </div>
+        </section>
+
+        <!-- Career Objectives -->
+        <section class="section">
+            <h2 class="section-title">Career Objectives</h2>
+            <div class="item-description">
+                <p>Seeking internship and part-time opportunities in:</p>
+                <ul style="color: var(--text-light); margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Cloud computing and AWS services</li>
+                    <li>Cybersecurity and information protection</li>
+                    <li>Technical support and customer service</li>
+                    <li>Software development and IT solutions</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Availability:</strong> Flexible part-time hours, willing to commute within Johannesburg area. Committed to balancing academic responsibilities with professional development.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="section">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="item-description">
+                <p><strong>Professional Portfolio Website:</strong> d2bfr7z8hjzjjb.cloudfront.net</p>
+                <p>Features AWS-hosted static website with CloudFront CDN, demonstrating cloud deployment skills and professional presentation.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Add print functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-print when opened (optional)
+            // window.print();
+            
+            // Add print button functionality
+            const printButton = document.createElement('button');
+            printButton.innerHTML = '<i class="fas fa-print"></i> Print CV';
+            printButton.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: var(--primary-color);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 6px;
+                cursor: pointer;
+                font-family: inherit;
+            `;
+            printButton.onclick = () => window.print();
+            document.body.appendChild(printButton);
+        });
+    </script>
+</body>
+</html>
