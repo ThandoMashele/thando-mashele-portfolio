@@ -131,3 +131,15 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Language card animations
+const languageCards = document.querySelectorAll('.language-card');
+languageCards.forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+    });
+});
